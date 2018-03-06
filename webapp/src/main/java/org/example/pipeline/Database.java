@@ -5,7 +5,7 @@ import com.couchbase.client.java.CouchbaseCluster;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author arungupta
+ * @author pjayaramanma
  */
 public class Database {
 
