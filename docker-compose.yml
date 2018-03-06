@@ -2,7 +2,7 @@ version: '2'
 
 services:
   db:
-    image: arungupta/oreilly-couchbase
+    image: pjayaramanma/java-couchbase
     ports:
       - 8091:8091
       - 8092:8092
@@ -11,10 +11,10 @@ services:
 
   app:
     build: ./webapp
-    image: arungupta/docker-jenkins-app
+    image: pjayaramanma/docker-jenkins-app
 
   app2:
-    image: arungupta/docker-jenkins-pipeline:${BUILD_NUMBER}
+    image: pjayaramanma/docker-jenkins-pipeline:${BUILD_NUMBER}
 
   unit:
     image: maven
